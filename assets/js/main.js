@@ -4,6 +4,13 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+function scrollToNextSection() {
+  const nextSection = document.querySelector('.portfolio');
+  nextSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+
 !(function($) {
   "use strict";
 
