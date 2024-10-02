@@ -506,87 +506,36 @@ section .container {
   background: #042b56eb;
 }
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
+/*-------------------------------------------------------------
+#timeline
+---------------------------------------------------------------*/
+
+.timeline .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #09203a;
+  transition: ease-in-out 0.3s;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.12);
+
+.timeline .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
 }
 
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
+.timeline .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
   color: #fff;
 }
 
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0 0 0 45px;
-}
-
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: rgba(255, 255, 255, 0.25);
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: rgba(255, 255, 255, 0.1);
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
-}
-
-.testimonials .owl-nav, .testimonials .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3) !important;
-}
-
-.testimonials .owl-dot.active {
-  background-color: #1c7d32 !important;
-}
-
-@media (max-width: 767px) {
-  .testimonials {
-    margin: 30px 10px;
-  }
+.timeline .icon-box:hover {
+  background: #042b56eb;
 }
 
 /*--------------------------------------------------------------
@@ -1037,6 +986,15 @@ section .container {
   padding: 12px 15px;
 }
 
+a.button {
+  padding: 1px 6px;
+  border: 1px outset buttonborder;
+  border-radius: 3px;
+  color: buttontext;
+  background-color: buttonface;
+  text-decoration: none;
+}
+
 .contact .php-email-form button[type="submit"] {
   background: #1c7d32;
   border: 0;
@@ -1095,4 +1053,59 @@ section .container {
     right: 0;
     transform: translateX(-50%);
   }
+}
+
+/*----------------------------------------------------
+#Projects
+-----------------------------------------------------*/
+
+.project-container {
+  display: flex;
+  border: 1px;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 99%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.project-image img {
+  width: 500px;
+  height: 400px;
+  display: block;
+  padding-left: 10px;
+}
+
+.project-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:  #00ff6a;
+}
+
+.project-content {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.project-button a {
+  display: inline-block;
+  background-color: #00ff6a; 
+        border: none; 
+        color: #000; 
+        padding: 7px 15px; 
+        cursor: pointer; 
+        font-size: 16px;
+        border-radius: 5px;
+}
+
+.project-button a:hover {
+  background-color: #0056b3;
 }
