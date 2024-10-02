@@ -568,133 +568,208 @@
 
 
   <!-- Start Project Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
+  <section id="portfolio">
 
-      <div class="section-title">
-        <h2>Projects</h2>
+      <h3 style="padding-top: 60px;">Hobby projects I did during my free time!</h3>
+
+        <div class="section-title">
+          <h2 style="padding-top: 30px;">Generative AI</h2>
+        </div>
+
+      <div class="project-container">
+        <div class="project-image">
+            <img src="assets/img/project/mathsolver.webp" alt="Project Image" >
+        </div>
+        <div class="project-details">
+            <div class="project-title" style="padding-left: 20px">Math Problem Solver</div>
+            <div class="project-content">
+              <ul>
+                <li>Implemented a Chat Bot that will answer math related questions. It provides logical reasoning
+                  and completes the problem in a step by step manner. 
+                </li>
+                <li>Technologies Used: Langchain, Groq API, Streamlit, Jupyter Notebook, Python</li>
+              </ul>
+            </div>
+            <div class="project-button" style="padding-left: 300px;">
+                <a href="https://github.com/AviGon/Generative_AI_Projects/blob/main/Math_Problem_Solver.py" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-container">
+      <div class="project-image">
+          <img src="assets/img/project/RAG.png" alt="Project Image" >
       </div>
+      <div class="project-details">
+          <div class="project-title" style="padding-left: 20px">A System that uses RAG for PDF Question Answering</div>
+          <div class="project-content">
+            <ul>
+              <li>
+                This tool takes a PDF as input and then answers any questions based on the user's queries and the context of the PDF.
+                It uses Facebook AI Similarity Search database for querying and storing embeddings of the pdf.
+              </li>
+              <li>Technologies Used: Langchain, Groq API, Streamlit, Jupyter Notebook, Python, HuggingFace Embeddings</li>
+            </ul>
+          </div>
+          <div class="project-button" style="padding-left: 300px;">
+              <a href="https://github.com/AviGon/Generative_AI_Projects/blob/main/RAG.py" target="_blank">View Project</a>
+          </div>
+      </div>
+  </div>
 
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Web-App</li>
-            <li data-filter=".filter-project">Project</li>
+  <div class="project-container">
+    <div class="project-image">
+        <img src="assets/img/project/searchengine.png" alt="Project Image" >
+    </div>
+    <div class="project-details">
+        <div class="project-title" style="padding-left: 20px">Search Engine Using Tools and Agents</div>
+        <div class="project-content">
+          <ul>
+            <li>
+              This is a langchain tool that acts like a search engine with the help of tools and agents incase the data queried is beyond the knowledge of the 
+              LLM's trained data. It takes help from agents like DuckDuckGo browser, Arxiv and Wikipedia for fetching unknown information.
+            </li>
+            <li>Technologies Used: Langchain, Groq API, Streamlit, Jupyter Notebook, Python</li>
           </ul>
         </div>
-      </div>
-      
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4><a href="https://avigon.pythonanywhere.com/" target="_blank">Covid-19 Detector</a></h4></center>
-          <div class="portfolio-wrap">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="avigon.pythonanywhere.com" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i>Covid-19 Predictor</a>
-              </div>
-            </div>
-          </div>
+        <div class="project-button" style="padding-left: 300px;">
+            <a href="https://github.com/AviGon/Generative_AI_Projects/blob/main/Search_Engine_Using_Tools_and_Agents.py" target="_blank">View Project</a>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Image recognition as Service</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/iras.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/iras.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Music Streaming Website</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/musicplayer.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Movie Recommender</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/recommender.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <!-- <br> -->
-          <center><h4>Resume Section Classifier</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Resume Section Classifier</h4>
-              <div class="portfolio-links">
-                <a href="projects/resume.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Video Description Generator</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/vdg.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>ML-DL Web-App</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/ml.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <!-- <br> -->
-          <center><h4>Image Generator</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/gan.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
+</div>
+
+<div class="project-container">
+  <div class="project-image">
+      <img src="assets/img/project/youtube.jpg" alt="Project Image" >
+  </div>
+  <div class="project-details">
+      <div class="project-title" style="padding-left: 20px">YouTube Web Content Summarisation</div>
+      <div class="project-content">
+        <ul>
+          <li>
+            This tool uses langchain to summarise youtube video or a website when the user provides the corresponding link. It also validates the link provided
+            to make sure it is correct and not malicious. 
+          </li>
+          <li>Technologies Used: Langchain, Groq API, Streamlit, Jupyter Notebook, Python</li>
+        </ul>
+      </div>
+      <div class="project-button" style="padding-left: 260px;">
+          <a href="https://github.com/AviGon/Generative_AI_Projects/blob/main/Youtube_Website_Content_Summarisation.py" target="_blank">View Project</a>
+      </div>
+  </div>
+</div>
+
+<div class="section-title">
+  <h2 style="padding-top: 30px;">Machine Learning, Deep Learning and Reinforcement Learning</h2>
+</div>
+
+<div class="project-container">
+  <div class="project-image">
+      <img src="assets/img/project/covid.jpg" alt="Project Image" >
+  </div>
+  <div class="project-details">
+      <div class="project-title" style="padding-left: 20px">Covid 19 Detector</div>
+      <div class="project-content">
+        <ul>
+          <li>Built and deployed a website that outputs the probability of the patient having COVID-19 when the symptoms are given.
+            The objective was to treat people with higher probability first due to the shortage of oxygen cylinders</li>
+          <li>Trained ML models on existing data which can predict the probability based on the symptoms along with APIs for latest
+            covid updates</li>
+          <li>Technologies Used: HTML, CSS, Flask, API, Python, Sklearn</li>
+        </ul>
+      </div>
+      <div class="project-button" style="padding-left: 300px;">
+          <a href="https://avigon.pythonanywhere.com" target="_blank">View Project</a>
+      </div>
+  </div>
+</div>
+
+<div class="project-container">
+  <div class="project-image">
+      <img src="assets/img/project/yolo.jpg" alt="Project Image" >
+  </div>
+  <div class="project-details">
+      <div class="project-title" style="padding-left: 20px">Object Detection Using YOLO Algorithm</div>
+      <div class="project-content">
+        <ul>
+          <li>
+            Implemented object detection using YOLO algorithm. YOLO involves a CNN network and images are processed as arrays of data and common traits are identified.
+          </li>
+          <li>Multiple training images of cars were extracted from AWS commandline and used. We detected licence plates of these vehicles. The training data consists of 1500 images and validation set consists of 300 images.</li>
+          <li>Technologies Used: Google Colab, Python</li>
+        </ul>
+      </div>
+      <div class="project-button" style="padding-left: 300px;">
+          <a href="https://github.com/AviGon/Machine-Learning-Course-Project" target="_blank">View Project</a>
+      </div>
+  </div>
+</div>
+<div class="project-container">
+          <div class="project-image">
+              <img src="assets/img/project/stocks.jpg" alt="Project Image" >
+          </div>
+          <div class="project-details">
+              <div class="project-title" style="padding-left: 20px">A Q-learning Agent for Automated Trading in Equity Stock Markets</div>
+              <div class="project-content">
+                <ul>
+                  <li>
+                    Implemented a Q Learning Agent that will tell a user when to buy, sell or hold a particular stock based on previous trends and learned data to maximise profits.
+                  </li>
+                  <li>Further utilized a Double Q Learning method to improve our algorithm to get a better profit</li>
+                  <li>Technologies Used: Google Colab, Python</li>
+                </ul>
+              </div>
+              <div class="project-button" style="padding-left: 300px;">
+                  <a href="https://github.com/AviGon/RL-PROJECT-1" target="_blank">View Project</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="section-title">
+        <h2 style="padding-top: 30px;">Software Development</h2>
+      </div>
+
+      <div class="project-container">
+        <div class="project-image">
+            <img src="assets/img/project/book exchange.webp" alt="Project Image" >
+        </div>
+        <div class="project-details">
+            <div class="project-title" style="padding-left: 20px">Mutual Book Exchange Portal</div>
+            <div class="project-content">
+              <ul>
+                <li>
+                  Developed a web-based application that enables users who registered to exchange books that they have with them.
+                </li>
+                <li>Has multiple functionalities such as user management, user publishing book details, and the user requesting books.</li>
+                <li>Technologies Used: HTML, CSS, Java, Servlets, MySQL and Apache Tomcat</li>
+              </ul>
+            </div>
+            <div class="project-button" style="padding-left: 300px;">
+                <a href="https://github.com/AviGon/book-exchange-portal" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-container">
+      <div class="project-image">
+          <img src="assets/img/project/resume.jpg" alt="Project Image" >
+      </div>
+      <div class="project-details">
+          <div class="project-title" style="padding-left: 20px">Automatic Resume Generator</div>
+          <div class="project-content">
+            <ul>
+              <li>
+                This project generates a resume once user gives his/her details.
+              </li>
+              <li>Technologies Used: HTML, CSS Bootstrap and JavaScript</li>
+            </ul>
+          </div>
+          <div class="project-button" style="padding-left: 300px;">
+              <a href="https://github.com/AviGon/Resume-Generator" target="_blank">View Project</a>
+          </div>
+      </div>
+  </div>
+
   </section>
 
   <!-- End Project Section -->
